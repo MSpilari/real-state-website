@@ -8,11 +8,11 @@ const Logos = () => {
     <>
       <Image className="block md:hidden" alt="Logo Mobile" src={LogoMobile} />
       <Image
-        className="hidden md:block lg:hidden"
+        className="hidden md:block xl:hidden"
         alt="Logo Laptop"
         src={LogoLaptop}
       />
-      <Image className="hidden lg:block" alt="Logo Desktop" src={LogoDesktop} />
+      <Image className="hidden xl:block" alt="Logo Desktop" src={LogoDesktop} />
     </>
   );
 };
