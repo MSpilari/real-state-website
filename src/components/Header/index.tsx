@@ -12,11 +12,11 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full h-16 md:h-20 lg:h-24 text-white px-4 py-5 md:px-20 md:py-4 lg:px-40 lg:py-5 flex items-center justify-between border-b-2 border-purple-90">
+      <header className="w-full h-16 md:h-20 lg:h-24 text-white px-4 py-5 md:px-20 md:py-4 flex items-center justify-between border-b-2 border-purple-90">
         <Logos />
         <nav className="hidden md:flex items-center font-medium">
           <Link
-            className={`px-5 py-3 lg:px-6 text-sm lg:text-lg ${
+            className={`px-5 py-3 lg:px-6 text-sm lg:text-base ${
               pathname === "/" && "border border-grey-15 rounded-lg"
             }`}
             href="/"
@@ -24,7 +24,7 @@ const Header = () => {
             Home
           </Link>
           <Link
-            className={`px-5 py-3 lg:px-6 text-sm lg:text-lg ${
+            className={`px-5 py-3 lg:px-6 text-sm lg:text-base ${
               pathname === "/aboutus" && "border border-grey-15 rounded-lg"
             }`}
             href="/aboutus"
@@ -32,7 +32,7 @@ const Header = () => {
             About Us
           </Link>
           <Link
-            className={`px-5 py-3 lg:px-6 text-sm lg:text-lg ${
+            className={`px-5 py-3 lg:px-6 text-sm lg:text-base ${
               pathname === "/properties" && "border border-grey-15 rounded-lg"
             }`}
             href="properties"
@@ -40,7 +40,7 @@ const Header = () => {
             Properties
           </Link>
           <Link
-            className={`px-5 py-3 lg:px-6 text-sm lg:text-lg ${
+            className={`px-5 py-3 lg:px-6 text-sm lg:text-base ${
               pathname === "/services" && "border border-grey-15 rounded-lg"
             }`}
             href="services"
@@ -50,7 +50,7 @@ const Header = () => {
         </nav>
 
         <Link
-          className="hidden md:flex px-5 py-3 lg:px-6 text-sm lg:text-lg border border-grey-15 rounded-lg"
+          className="hidden md:flex px-5 py-3 lg:px-6 text-sm lg:text-base border border-grey-15 rounded-lg"
           href=""
         >
           Contact Us
